@@ -166,7 +166,7 @@ class ColaboradorDAO
 
          $colaborador->save();
 
-
+         //se agrega esto para cada vez que se agrege un colaborador crear un socio para la accion 4000
          DB::table("socios")->insertGetId([
             "cve_persona" => $persona->cve_persona,
             "cve_direccion" => $direccion->cve_direccion,
